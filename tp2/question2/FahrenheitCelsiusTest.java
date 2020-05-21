@@ -60,6 +60,12 @@ public class FahrenheitCelsiusTest extends junit.framework.TestCase
     {
         //Libérez ici les ressources engagées par setUp()
     }
+    public void test2_fahrenheitEnCelsius() {
+		assertEquals("    9 °F -> -17.7 °C ? ", -17.7, question1.FahrenheitCelsius.fahrenheitEnCelsius(0), 0.1);
+		assertEquals("  199 °F -> 37.7 °C ? ", 37.7, question1.FahrenheitCelsius.fahrenheitEnCelsius(100), 0.1);
+		assertEquals(" 999 °F -> 1093.3 °C ?", 1093.3, question1.FahrenheitCelsius.fahrenheitEnCelsius(2000), 0.1);
+		assertEquals("   69 °F -> 12.2 °C ?", 12.2, question1.FahrenheitCelsius.fahrenheitEnCelsius(54), 0.1);
+	}
 
     /**
      * Il ne vous reste plus qu'à définir une ou plusieurs méthodes de test.
